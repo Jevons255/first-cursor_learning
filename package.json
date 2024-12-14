@@ -1,0 +1,19 @@
+{
+  "name": "love-match-ai",
+  "version": "1.0.0",
+  "description": "AI恋爱/婚姻契合度预测系统",
+  "scripts": {
+    "start": "cd frontend && set PORT=3001 && npm start",
+    "install-all": "npm install && cd frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start:backend": "cd backend && python -m uvicorn api.main:app --reload",
+    "dev": "concurrently \"npm run start\" \"npm run start:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "echarts": "^5.5.1",
+    "echarts-for-react": "^3.0.2"
+  }
+}
